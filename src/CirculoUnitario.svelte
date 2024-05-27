@@ -18,7 +18,7 @@
 
     <div class="line"></div>
     <div class="line" style="transform: rotate(90deg);"></div>
-    <div class="point" style="transform: translate({3800*posX(k)}%,{(-1)*2000*posY(k)}%)"></div>
+    <div class="point" style="transform: translate({1000*posX(k)}%,{(-1)*1000*posY(k)}%)"></div>
 
 </div>
 

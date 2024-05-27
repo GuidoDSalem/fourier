@@ -9,9 +9,17 @@
   import FourierSerie from "./FourierSeries.svelte"
   import FourierSeries from "./FourierSeries.svelte";
   import CirculoUnitario from "./CirculoUnitario.svelte"
+  import Wave from "./Wave.svelte"
 
   let numbers = [5, 18, 29, 75, 100]
   let numbersDivided5 = numbers.map(n => Math.floor(n / 5))
+
+  // const waveArray = Array.from({ length: 100 }, () =>
+  //   Math.sin(Math.random() * 2 * Math.PI)
+  // );
+  // const values = Array.from({ length: 100 }, () =>
+  //   Math.sin(Math.sin() * 2 * Math.PI)
+  // );
 
 </script>
 
@@ -20,7 +28,11 @@
   <Circulo />
   <CirculoUnitario />
 
-  
+  <h1>Onda Animada</h1>
+  <!-- <Wave {values} speed={5} /> -->
+  <Wave />
+  <Wave />
+  <Wave />
 
   <h1>Visualización de la Serie de Fourier</h1>
   <FourierSeries />
