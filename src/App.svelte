@@ -10,6 +10,8 @@
   import FourierSeries from "./FourierSeries.svelte";
   import CirculoUnitario from "./CirculoUnitario.svelte"
   import Wave from "./Wave.svelte"
+  import Formula from './Formula.svelte';
+
 
   let numbers = [5, 18, 29, 75, 100]
   let numbersDivided5 = numbers.map(n => Math.floor(n / 5))
@@ -36,6 +38,8 @@
 
   <h1>Visualización de la Serie de Fourier</h1>
   <FourierSeries />
+  <h1>Formulita con felo</h1>
+  <Formula/>
 
 </main>
 
