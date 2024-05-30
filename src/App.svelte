@@ -29,6 +29,7 @@
   <h1>Series de Fourier</h1>
   <Circulo />
   <CirculoUnitario />
+  <iframe title="Geogebra" src="https://www.geogebra.org/calculator/wsnrzp52?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
   <h1>Onda Animada</h1>
   <!-- <Wave {values} speed={5} /> -->
