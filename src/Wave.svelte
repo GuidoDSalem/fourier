@@ -81,7 +81,7 @@
 
 <div>
     <label for="frequency">Frecuencia:</label>
-    <input type="range" id="frequency" min="-10" max="10" step="1" bind:value={frequency} on:input={updateWave} />
+    <input type="range" id="frequency" min="-10" max="10" step="0.01" bind:value={frequency} on:input={updateWave} />
     <span>{frequency.toFixed(1)}</span>
 </div>
 

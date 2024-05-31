@@ -11,6 +11,7 @@
   import CirculoUnitario from "./CirculoUnitario.svelte"
   import Wave from "./Wave.svelte"
   import Formula from './Formula.svelte';
+  import FormulaAnBn from './FormulaAnBn.svelte';
 
 
   let numbers = [5, 18, 29, 75, 100]
@@ -40,6 +41,8 @@
   <FourierSeries />
   <h1>Formulita con felo</h1>
   <Formula/>
+  <h1>ahora cambio An y Bn</h1>
+  <FormulaAnBn/>
 
 </main>
 
@@ -66,4 +69,5 @@
   h1 {
     margin-bottom: 20px;
   }
+ 
 </style>

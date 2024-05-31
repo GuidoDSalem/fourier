@@ -5,15 +5,17 @@
   let L = 2; // Valor inicial de L
   let datos = []; // Almacena los datos del gráfico
   let svg; // Referencia al SVG
+  let an = 1  
+  let bn = 1
 
   // Función para calcular la serie de Fourier
-  function fourierSeries(x, L) {
+  function fourierSeries(x, L, an, bn) {
     const nMax = 10; // Número máximo de términos en la serie (ajústalo según tus necesidades)
     let result = 0;
 
     for (let n = 1; n <= nMax; n++) {
-      const an = 4; // Calcula el coeficiente a_n
-      const bn = 3; // Calcula el coeficiente b_n
+      
+      
       result += an * Math.cos((n * Math.PI * x) / L) + bn * Math.sin((n * Math.PI * x) / L);
     }
 
@@ -24,7 +26,7 @@
   $: actualizarGrafico = () => {
     datos = [];
     for (let x = 0; x <= 10; x += 0.1) {
-      const y = fourierSeries(x, L);
+      const y = fourierSeries(x, L,an , bn);
       datos.push([x, y]);
     }
     actualizarSVG();
@@ -71,14 +73,21 @@
 </script>
 
 <div id="grafico" />
-<input type="range" min="0" max="2" step="0.01" bind:value={L} on:input={actualizarGrafico} />
+<input type="range" min="0" max="2" step="0.001" bind:value={L} on:input={actualizarGrafico} />
 <p>{L}</p>
-<p>{datos}</p>
 
 <style>
   #grafico {
     width: 100%;
     height: 400px;
     border: 1px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
+  
+  svg {
+    display:block;
+  }
+  
 </style>
